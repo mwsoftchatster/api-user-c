@@ -1,0 +1,10 @@
+version: '2.2'
+
+services:
+  user_c:
+    image: chatster/api-user-c
+    build: .
+    container_name: user_c
+    ports:
+      - 3000:3000
+      - 2900:2900
